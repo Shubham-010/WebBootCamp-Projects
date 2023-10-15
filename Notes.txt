@@ -1,0 +1,13 @@
+♦Undefiened and Null
+
+Null - Intensionally not assigned value
+undefined - Variables that does not have any assigned value
+
+
+
+
+♦Call Stacks 
+1) It Shows the excution of code in stack format.
+
+♦ WebApis and Single Threaded
+1)
