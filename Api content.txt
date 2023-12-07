@@ -1,0 +1,9 @@
+Intro to APIS:-
+
+What are APIS?
+- Api are Application Programing interface is a computing interface which defines interactions between multiple software intermediaries.
+
+JSON
+-Java Script Object Notation
+-way of formatting data which is easily readable for browser
+- 
