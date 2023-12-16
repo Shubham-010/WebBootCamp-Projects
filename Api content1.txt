@@ -31,4 +31,38 @@ Understanding Query Strings
 - URL ?object=description&object=description
 
 HTTP Headers
+- pair of information which goes along with request
+- 
+
+
+Makings XHRs
+- const req = new XMLHttpRequest();
+
+    req.onload = function () {
+      console.log('thiss :>> ', this);
+      let data = this.responseText;
+      console.log('data :>> ', data);
+    }
+    req.onerror = function (params) {
+      console.log('error :>> ');
+      console.log('thiss :>> ', this);
+    }
+
+    req.open("GET", "https://swapi.dev/api/people/1/")
+    req.send();
+	
+	
+Using The Fetch API
+- fetch("URL").then().catch()
+- fetch gives us data but in locked format ie Response body.
+- need to parse it using json().
+-
+
+AXIOS
+-a library for making http requests
+-axios has get method for alternate of api calls
+-
+
+
+Setting Headers With Axios
 -
