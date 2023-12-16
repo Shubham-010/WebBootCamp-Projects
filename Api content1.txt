@@ -65,4 +65,13 @@ AXIOS
 
 
 Setting Headers With Axios
+-  const config = {headers:{Accept:'application/json'}}
+
+      const res = await axios.get("https://swapi.dev/api/people/1/", config)
+      console.log('res :>> ', res);
+      console.log('dataname :>> ', res.data.name);
+
+
+
+TV Show Search App
 -
