@@ -65,4 +65,17 @@ AXIOS
 
 
 Setting Headers With Axios
--
+-  const config = {headers:{Accept:'application/json'}}
+
+      const res = await axios.get("https://swapi.dev/api/people/1/", config)
+      console.log('res :>> ', res);
+      console.log('dataname :>> ', res.data.name);
+
+
+
+TV Show Search App
+- Done
+
+Factory Fuction
+- The function which returns a result on passing a input, param, method into a function
+
