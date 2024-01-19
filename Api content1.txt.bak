@@ -79,3 +79,12 @@ TV Show Search App
 Factory Fuction
 - The function which returns a result on passing a input, param, method into a function
 
+Basic Terminal function
+- ls , ls -l,cd, relative path and absolute path , mrdir, touch , rm , rmdir, rmdir -rf [recersive force]
+
+Introduction to Nodejs
+-
+-used in Netflix,Uber,Videogames [Cross-Code],
+-commands
+1)
+

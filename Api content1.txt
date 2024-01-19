@@ -82,3 +82,42 @@ Factory Fuction
 Basic Terminal function
 - ls , ls -l,cd, relative path and absolute path , mrdir, touch , rm , rmdir, rmdir -rf [recersive force]
 
+Introduction to Nodejs
+-
+-used in Netflix,Uber,Videogames [Cross-Code],
+-commands
+1)
+
+
+
+NODE JS
+
+process and argv
+- process gives information about ,and control over node.js process.
+- process can be termed as instance of the EventEmitter
+
+argv
+-The process.argv property returns an array containing the command-line arguments passed when the Node.js process was launched
+
+
+NODE REPL
+- node -> gives node versions
+- global -> 
+
+All-important Package.json
+- npm init - generally used to create custom 
+
+
+Express FrameWork 
+-Starts up a server to listen for requests
+-parse incoming requests
+-match those requests to particular routes
+-craft our http request  and 
+
+Intro 
+-Difference between library | FrameWork
+• Library - When you use a library , you are in charge. You control the flow of the application code and you decide when to use library.
+• FrameWork - With frameworks, that control is inverted . The framework is in charge and you are merely a participant.it tells you where to plug in code.
+
+
+ 	
