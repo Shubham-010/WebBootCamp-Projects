@@ -119,5 +119,81 @@ Intro
 • Library - When you use a library , you are in charge. You control the flow of the application code and you decide when to use library.
 • FrameWork - With frameworks, that control is inverted . The framework is in charge and you are merely a participant.it tells you where to plug in code.
 
+- Templating
+• Templating allows us to define a preset"pattern" for a webpage.
 
- 	
+- Passing data to template
+• by using render method a data can be transferred from route to template in form of object 
+eg ==>
+======================
+argv.js
+app.get('/random',(req,res)=>{
+    const RNum = Math.floor(Math.random() * 10) + 1; //! parameter
+        res.render('random', { num : RNum }) //! passed the parameter in num object
+})
+-------------------
+random .ejs
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Random</title>
+</head>
+<body>
+   <h1>This is random page <%= num %></h1>
+</body>
+</html>
+
+==================
+
+Bootstrap interaction with express 
+- download bootstrap and give the respective folder
+
+Partials
+- systematic way of rendering common elements by using include metode
+eg==>
+<%- include('partials/head') %> //include method to render a particular page
+
+<body>
+    <%- include('partials/navbar') %>
+    
+      <container>
+    <h1>This is a Cat page</h1>
+
+    <ul>
+       <% for(let cat of Cats){ %>
+            <li><%= cat %></li>
+      <%  } %>
+
+    </ul>
+    </container>
+</body>
+<%- include('partials/Footer') %>
+
+GET VS POST request
+-GET :- 
+	•used to retrieve information
+	•data is sent via query string
+	•information is plainly visible in URLs
+	•limited amount of data can be sent
+-POST :-
+	•used to sent data to the server
+	•used to write/create/update
+	•Data is sent via request body not a query string
+	•Can send any sort of data (JSON!)
+	
+Defining express post routes
+- refer Restdemo
+
+Parsing the request body
+- app.use(express.urlencoded({extended:true}))  //? url encoded payloads
+	app.use(express.json())  //? json encoded format
+	
+- app.post('/optimus',(req,res)=>{
+    console.log(req.body);
+    const {Name,Age} =  req.body;
+    res.send(`Hi Master ${Name}[${Age}],<h3>Post</h3>`)
+})
+
+REST [Representational State Transfer]
+	

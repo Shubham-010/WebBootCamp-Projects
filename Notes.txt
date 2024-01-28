@@ -11,3 +11,16 @@ undefined - Variables that does not have any assigned value
 
 ♦ WebApis and Single Threaded
 1)
+
+
+♦ Object Prototypes
+1) Prototypes is termed as templates of the object consisting of methods and properties.
+2) Difference between Prototypes and _proto_
+	• Prototypes is actual object 
+	• _proto_ is refered as an reference	
+
+♦ Object Oriented Programming
+1)major use is to add customised methods to the object
+
+♦ Factory Function
+1)Its is function which has input , methods and returns results
