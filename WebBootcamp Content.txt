@@ -148,5 +148,12 @@ It can store more type of data parameters[ie. JSON parameters(string,number,bool
 Inserting into Mongodb
 -it is inserted in the form of collection[grouping of data]
 
+Commands
+•use [name] - create/directs to your database.
+•show collections - to show the data
+•db.[name].insertOne({data object}) -  to add data in database
+-> db.testcol.insertOne({name:'Test',age:3,isDisable:true})
+
+
 
  	
